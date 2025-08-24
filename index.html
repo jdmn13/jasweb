@@ -3,10 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>team conrad</title>
-  <link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/southpark/images/4/4b/Timmy.png/revision/latest?cb=20211214153025&path-prefix=fr">
-</head>
-<body>
 <style>
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+
+.header {
+  background-color: cadetblue;
+  padding: 15px;
+  text-align: center;
+}
 
 body {
   background-color: lightblue;
@@ -16,6 +30,45 @@ h1 {
   color: white;
   text-align: center;
   font-size : 30px;
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+h2 {
+  color: black;
+  text-align: left;
+  font-size : 20px;
+  text-decoration: none;
+  font-family: helvetica;
+}
+h5 {
+  color: black;
+  text-align: left;
+  font-size : 12px;
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #484f4f;
+  font-family: helvetica;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-family: helvetica;
 }
 
 p {
@@ -23,12 +76,106 @@ p {
   font-size: 12px;
 }
 
+ul {
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:#F0F8FF;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.card2 {
+  background-color: #F0F8FF;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 </style>
 
-  <h1>Jasss</h1>
-  <p>helloooo.</p>
-  <a href="secondpage.html">seconde page</a>
+
+
+
+<body>
+
+  <div class="header">
+  <h1>Jas Website</h1></div>
+  
+  <div class="topnav">
+  <a href="https://jasdmn13.web.app/">Home</a>
+  <a href="secondpage.html">Seconde Page</a>
+  <a href="fichiers.html">Fichiers</a></div>
+ 
+ 
+ <div class="row">
+  <div class="leftcolumn">
+    <div class="card2">
+      <h2>"You better hold on tight, spider-monkey."</h2>
+      <h5>Oaoaoaoaoa, Dec 7, 2017</h5>
+<img src="https://i.pinimg.com/736x/71/96/f1/7196f133eda0ae4f2b3554ad7f75d8a8.jpg" width="200" height="200"> 
+      <p>A classic mormon love story..</p>
+      <p>Team Edward or Team Jacob? Honestly, none of them. Every single character is toxic and creepy. Except Charlie.</p>
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h5>It's me, hi.</h5>
+      <p>24/08/2025</p>
+    </div>
+  </div>
+</div>
 
  
-<img src="https://i.pinimg.com/736x/71/96/f1/7196f133eda0ae4f2b3554ad7f75d8a8.jpg">
-  <button><a href="https://letterboxd.com/jdmn/">je suis zinzin</a></button>
+<ul>
+  <li><a href="https://jasdmn13.web.app/">Home</a></li>
+  <li><a href="secondpage.html">SecondePage</a></li>
+  <li><a href="https://letterboxd.com/jdmn/"target="_blank">Letterboxd</a></li>
+  <li><a href="https://letterboxd.com/jdmn/"target="_blank">Contact</a></li>
+
+</ul>
+</body>
+</html>
