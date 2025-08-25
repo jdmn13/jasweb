@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Mon premier post",
+    "date": "2025-08-25",
+    "content": "Voici le contenu de mon premier post."
+  },
+  {
+    "title": "Deuxième post",
+    "date": "2025-08-26",
+    "content": "Encore un post avec du texte."
+  }
+]
